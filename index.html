@@ -1,493 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Выше 3 Мета-теги ** должны прийти в первую очередь в голове; любой другой руководитель контент *после* эти теги -->  
-    <title>CV Andrew P.</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Andrei Pautov</title>
+    <link rel="stylesheet" href="custom/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Andrei Pautov</h1>
+        <p>Backend Developer | Go / Python Enthusiast</p>
+    </header>
 
-    <!-- Bootstrap -->  
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <section class="about">
+        <h2>About</h2>
+        <p>
+            I’m Andrei, a backend engineer with a strong focus on building scalable, high-performance systems. With 7 years of experience in product teams, I specialize in Golang and Python, designing and implementing end-to-end solutions for fintech, HR tech, and medical industries.
+            <br><br>
+            I’ve worked on complex data processing pipelines, real-time messaging systems, and cloud-native architectures, ensuring reliability, efficiency, and maintainability. My expertise includes Golang, Python (Django, FastAPI, Flask), PostgreSQL, Kafka, Redis, Docker, and Kubernetes.
+            <br><br>
+            I enjoy tackling technical challenges, mentoring developers, and driving architectural decisions that align with business needs.
+        </p>
+    </section>
 
-    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
-    <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
-    <!--[if lt IE 9]>
- <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
- <![endif]-->
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142635703-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-142635703-1');
-</script>
-
-
-  </head>
-    <body>
-
-    <!-- Begin page content -->
-        <div class="container">
-            <div class="row" style="margin-top: 20px">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                    <img src="photo_2017-10-09_17-05-44.jpg" height="356" width="356" class="img-circle">
+    <section class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li class="item">
+                <div class="item-header">
+                    <h3 class="place">Ozon Fintech</h3>
+                    <span class="years">January 2024 - current</span>
                 </div>
-                <div class="col-md-4">
-                    <h3>
-                        Andrei Pautov
-                    </h3>
-                    <h4><img src="https://img.icons8.com/ios-glyphs/30/000000/telegram-app.png" height="25" width="25"/>
-                        <a href="https://t.me/qooxdoo">telegram @qooxdoo</a> (preferred communication method)</h4>
-                    <h4><img src="https://img.icons8.com/ios/50/000000/email-open.png" height="25" width="25"/>
-                        <a href="mailto:pautov@phystech.edu">pautov@phystech.edu</a></h4>
-<!--                    <h4><img src="https://img.icons8.com/ios/50/000000/apple-phone.png" height="25" width="25"/>-->
-<!--                        <a href="tel:+4748922595">NOR +47 489-22-595</a></h4>-->
-                    <h4><img src="https://img.icons8.com/ios/50/000000/apple-phone.png" height="25" width="25"/>
-                        <a href="tel:+4748922595">SRB +381 62 8226581</a></h4>
-<!--                    <h4><img src="https://img.icons8.com/ios/50/000000/apple-phone.png" height="25" width="25"/>-->
-<!--                        <a href="tel:+79168486065">RUS +7(916)848-60-65</a></h4>-->
+                <h4 class="position">Golang Developer</h4>
+                <ul class="projects">
+                        <li>Released b2b and credit card scoring pipelines</li>
+                        <li>New admin panel for risk analysts and debt collection department</li>
+                        <li>Released service for limits changing, scaled manual pipeline speed from 1k/h to 100k/h processed users.</li>
+                        <li>Released user overdue notification project integrated with admin panel with fresh role model</li>
+                        <li>Built monitoring dashboards to health-check scoring platform, cache hits and scoring pipelines sanity checks.</li>
+                        <li>Code review, project decomposing and planning, defending project architecture, requirements gathering</li>
+                        <li>Moved billing platform to sharded database repository before black Friday sales</li>
+                        <li>Did non flexible deadline tasks to fit central bank requirements, eg preparing user data for quarter and annual reports.</li>
+                    </ul>
+                <div class="tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Republic</span>
+                    <span class="tag">Kafka</span>
+                    <span class="tag">Grafana</span>
+                    <span class="tag">Prometheus</span>
+                    <!-- и т.д. -->
                 </div>
-                <div class="col-md-2"></div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-9">
-                    <h3>
-                        Work Experience
-                    </h3>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>PitchMe.co<br></p>
-                                    <footer>Remote</footer>
-                                    <footer>Senior Software Engineer
-                                        <ul>
-                                            <li>
-                                                Build system using Flask for web-api, celery and gevent for async tasks, deployed to Heroku using CircleCI.
-                                            </li>
-                                            <li>
-                                                Reviewed the code
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h4>
-                                            Projects:
-                                        </h4>
-                                        <ul>
-                                            <li>
-                                                SaaS system for HR lead generation and HR profile enrichment
-                                            </li>
-                                        </ul>
-                                        #python, #celery, #docker, #flask, #heroku, #circleci, #pytest, #newrelic
-                                    </footer>
-
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">September 2022 – July 2023
-                                    </p>
-                                </blockquote>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>Vivid.Money<br></p>
-                                    <footer>Moscow</footer>
-                                    <footer>Senior Software Engineer
-                                        <br>
-                                    <ul>
-                                        <li>
-                                            Did application containerization (Docker)
-                                        </li>
-                                        <li>
-                                            Built microservice architecture and monitoring
-                                        </li>
-                                        <li>
-                                             Maintained legacy projects (Golang, Fastapi, Django)
-                                        </li>
-                                        <li>
-                                            Reviewed the code
-                                        </li>
-                                        <li>
-                                            Wrote built-in CI autotests
-                                        </li>
-                                    </ul>
-                                        <br>
-                                        <h4>
-                                            Projects:
-                                        </h4>
-                                        <ul>
-                                            <li>
-Fulltext search service, integrated with kafka
-                                            </li>
-                                            <li>
-Segmentation service integrated with several data sources
-                                            </li>
-                                        </ul>
-                                        #python, #fastapi, #docker, #kafka, #prometheus, #golang, #aws
-                                    </footer>
-
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">May 2021 – April 2022
-                                    </p>
-                                </blockquote>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>SBERmed<br></p>
-                                    <footer>Moscow</footer>
-                                    <footer>Senior Software Engineer
-                                        <br>
-                                    <ul>
-                                        <li>
-                                            Did application containerization (Docker)
-                                        </li>
-                                        <li>
-                                            Built microservice architecture and monitoring
-                                        </li>
-                                        <li>
-                                            Developed NoSQL-solutions for data storage
-                                        </li>
-                                        <li>
-                                            Integrated services with data storage in the medical systems (PACS)
-                                        </li>
-                                        <li>
-                                            Reviewed the code
-                                        </li>
-                                        <li>
-                                            Enacted and audited the code from external developers
-                                        </li>
-                                    </ul>
-                                        <br>
-                                        <h4>
-                                            Projects:
-                                        </h4>
-                                        <ul>
-                                            <li>
-Back-end of the systems for storage and processing of medical images (DICOM protocol) using machine-learning algorithms
-                                            </li>
-                                            <li>
-Back-end of the system for the textual analysis of patients' symptoms
-                                            </li>
-                                            <li>
-Back-end of the system for markup of the DICOM-formatted medical images
-                                            </li>
-                                            <li>
-Back-end of the system for EEG markup (.edf .udf)
-                                            </li>
-                                        </ul>
-                                        #python, #django, #flask, #pynetdicom, #dcm4che, #docker, #gitlab
-                                    </footer>
-
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">November 2020 – May 2021
-                                    </p>
-                                </blockquote>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>Skoltech, CoBrain-Analytics<br></p>
-                                    <footer>Moscow</footer>
-                                    <footer>Research Software Engineer
-                                        <br>
-                                    <ul>
-                                        <li>
-                                            Developed marketplace back-ends for datasets and AI algorithms <br>
-                                        </li>
-                                        <li>
-                                            Built microservices for processing DICOM-formatted images using c-store, c-move, c-get operations<br>
-                                        </li>
-                                        <li>
-                                            Built architecture
-                                        </li>
-                                    </ul>
-                                        #python, #django, #flask, #pynetdicom, #dcm4che, #docker, #gitlab
-                                    </footer>
-
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">August 2019 – October 2020
-                                    </p>
-                                </blockquote>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>Joint Institute for High Temperatures of the Russian Academy of Sciences<br></p>
-                                    <footer>Moscow</footer>
-                                    <footer>Junior Researcher
-                                        <br>
-                                    <ul>
-                                        <li>
-                                            Developed a new approach for the interaction of spherical macroparticles
-                                        </li>
-                                        <li>
-                                            Presented a poster at the Equations of State for Matter ELBRUS 2020
-                                        </li>
-                                    </ul>
-                                        #fortran, #python, #numpy, #scipy, #matplotlib, #plotly
-                                    </footer>
-
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">August 2019 – December 2021
-                                    </p>
-                                </blockquote>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>Flexbby<br></p>
-                                    <footer>Moscow</footer>
-                                    <footer>Python and JavaScript Full Stack Developer
-                                        <br>
-
-                                        <ul>
-                                            <li>
-                                                Integrated a chat bot platform with social media APIs, including VK, Telegram, Instagram
-                                            </li>
-                                            <li>
-                                                Compiled complex reporting using raw SQL, Python ORM
-                                            </li>
-                                            <li>
-                                                Developed various features of the electronic document flow system
-                                                concerning document approval and archival,
-                                                vacation approval and bonus calculation
-                                            </li>
-                                            <li>
-                                                Built database migrations
-                                            </li>
-                                            <li>
-                                                Provided support for the company's website
-                                            </li>
-                                        </ul>
-
-                                        #python, #js, #sql, #nginx, #postgreSQL, #mySQL
-                                    </footer>
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">June 2018 - August 2019</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>State Research Center of the Russian Federation Troitsk Institute for Innovation and Thermonuclear Research<br></p>
-                                    <footer>Troitsk, Moscow region</footer>
-                                    <footer>Engineer
-                                        <br>
-                                    <ul>
-                                        <li>
-                                            Wrote the dissertation pursuing a Master degree
-                                        </li>
-                                        <li>
-                                            3 poster presentations at the international conferences
-                                        </li>
-                                        <li>
-                                            2 publications in peer-reviewed journals from the list of the Higher Attestation Commission
-                                        </li>
-                                         <li>
-                                            Wrote the dissertation pursuing a Bachelor degree
-                                        </li>
-                                    </ul>
-                                    </footer>
-
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">June 2015 – August 2019
-                                    </p>
-                                </blockquote>
-                            </div>
-                                        
-                        </div>
+            </li>
+            <li class="item">
+                <div class="item-header">
+                    <h3 class="place">PitchMe.co</h3>
+                    <span class="years">September 2022 – July 2023</span>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-9">
-                    <h3>
-                        Education
-                    </h3>
-                    <div class="row">
-
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>Master of Science in Applied Mathematics and Physics, with honours </p>
-                                    Moscow Institute of Physics and Technology
-                                  <footer> Topic of the dissertation: Coagulation of spherical macroparticles in dusty plasmas</footer>
-                                </blockquote>
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">2016-2018</p>
-                                </blockquote>
-                            </div>
-
-                            <div class="col-md-8">
-                                <blockquote>
-                                    <p>Bachelor of Science in Applied Mathematics and Physics<br></p>
-                                    Moscow Institute of Physics and Technology
-                               <footer>Topic of the dissertation: Interaction of two spherical macroparlicles in equilibrium plasmas</footer>
-                                </blockquote>
-
-                            </div>
-                            <div class="col-md-4">
-                                <blockquote class="blockquote-reverse">
-                                    <p class="text-right">2012-2016</p>
-                                </blockquote>
-                            </div>
-
+                    <h4 class="position">Senior Software Engineer</h4>
+                    <ul class="projects">
+                        <li>Built SaaS system for HR lead generation and candidate profile enrichment</li>
+                        <li>Built system using Flask for web-api, celery and gevent for async tasks, deployed to Heroku using CircleCI.</li>
+                        <li>Scaled system from 1k/h to 100k/h processed profiles</li>
+                        <li>Integrated with ML models.</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Celery</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Heroku</span>
+                        <span class="tag">CircleCI</span>
+                        <span class="tag">Pytest</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redis</span>
                     </div>
+            </li>
 
+            <li class="item">
+                <div class="item-header">
+                    <h3 class="place">Vivid.Money</h3>
+                    <span class="years">May 2021 – April 2022</span>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
 
-
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-9">
-                    <h3 class="h3">
-                        Skills
-                    </h3>
-                    <ul>
-                        <h4>
-                            Computer skills
-                        </h4>
-                        <li>
-                            Python: FastAPI, AIOHTTP, Django, DRF, SQLAlchemy<br>
-                            Completed the course on Coursera: <a href="https://www.coursera.org/account/accomplishments/certificate/QARX7F2H9ULT">
-                                "Dive into Python by Moscow Institute of Physics and Technology, Mail.Ru Group & Online Education Development Fund on Coursera."
-                            </a>
-                        </li>
-                        <li>
-                            Golang, GRPC
-                        </li>
-                        <li>
-                            PostgreSQL, Redis, MongoDB, Kafka
-                        </li>
-                        <li>
-                            Docker, Gitlab, Gitlab-CI/CD, CircleCI, Heroku
-                        </li>
-                        <li>
-                            JS: qooxdoo
-                        </li>
-                        <li>
-                            C/C++, Fortran
-                        </li>
-                        <li>
-                            Page-proofs: LaTeX, html, css, bootstrap4
-                        </li>
-                        <h4>
-                            Languages
-                        </h4>
-                        <li>
-                            English: spoken fluent, written fluent
-                        </li>
-                        <li>
-                            Norwegian: basic
-                        </li>
-                        <li>
-                            Russian: native
-                        </li>
-                        <h4>
-                            Soft skills
-                        </h4>
-                        <li>
-                            Team player, great communication and interpersonal skills
-                        </li>
+                    <h4 class="position">Senior Software Engineer</h4>
+                    <ul class="projects">
+                        <li>Polls application to replace vendor solution integrated with our admin panel. Role model for admin panel.</li>
+                        <li>Data proxy for admin panel to gather user data among bank systems integrated with Kafka to receive updates and produce procedures for refund, block and unblock suspicious user transactions and support GDPR.</li>
+                        <li>Moved from providers to in-house products for customer support</li>
                     </ul>
+                    <div class="tags">
+                        <span class="tag">Golang</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Fastapi</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">GitlabCI</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Kafka</span>
+                    </div>
+            </li>
+
+            <li class="item">
+                <div class="item-header">
+                    <h3 class="place">Skoltech, CoBrain-Analytics (SBERmed)</h3>
+                    <span class="years">August 2019 – May 2021</span>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
 
-
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-9">
-                    <h3>Publications</h3>
-                    <ul>
-                        <li>
-                            Pautov, A. A., Rodin, M. M., & Filippov, A. V. (2019). Interaction potential of two spherical macroparticles at constant surface potentials. In Journal of Physics: Conference Series (Vol. 1147, No. 1, p. 012114). IOP Publishing. (DOI: 10.1088/1742-6596/1147/1/012114)
-                        </li>
-                        <li>
-                            Filippov, A. V., Derbenev, I. N., Pautov, A. A., & Rodin, M. M. (2017). Electrostatic interaction of macroparticles in a plasma in the strong screening regime. Journal of Experimental and Theoretical Physics, 125(3), 518-529. (DOI: 10.7868/S0044451017090176)
-                        </li>
+                    <h4 class="position">Research Software Engineer</h4>
+                    <ul class="projects">
+                        <li>Back-end of the systems for storage and processing of medical images (DICOM protocol) using machine-learning algorithms. Deployed to production.</li>
+                        <li>Back-end of the system for the textual analysis of patients' symptoms. Deployed to production.</li>
+                        <li>Back-end of the system for markup of the DICOM-formatted medical images</li>
+                        <li>Back-end of the system for EEG markup (.edf .udf)</li>
                     </ul>
-                    <h3>
-                    Presentations
-                    </h3>
-                    (*co-author)
-                    <ul>
-                        <li>
-                            35th International Conference on Equations of State for Matter ELBRUS 2020, poster
-                        </li>
-                        <li>
-                            33rd International Conference on Equations of State for Matter ELBRUS 2018, poster
-                        </li>
-                        <li>
-                            Scientific-Coordination Workshop on Non-Ideal Plasma Physics 2018, report*
-                        </li>
-                        <li>
-                            International Conference “The Physics of Low Temperature Plasma” (PLTP-2017), report*
-                        </li>
-                        <li>
-                            International Conference “The Physics of Low Temperature Plasma” (PLTP-2017), poster
-                        </li>
-                        <li>
-                            23rd Europhysics Conference on Atomic and Molecular Physics of Ionized Gases (ESCAMPIG),
-                            recognized by the European Physical Society as an Europhysics conference, poster*
-                        </li>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Elixir</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">GitlabCI</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+            </li>
 
-                    </ul>
+            <li class="item">
+                <div class="item-header">
+                    <h3 class="place">Flexbby</h3>
+                    <span class="years">June 2018 - August 2019</span>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
 
-        </div>
+                    <h4 class="position">Python and JavaScript Full Stack Developer </h4>
+                    <ul class="projects">
+                        <li>Integrated a chat bot platform with social media APIs, including VK, Telegram, Instagram</li>
+                        <li>Developed various features of the electronic document flow system concerning document approval and archival, vacation approval and bonus calculation</li>
+                        <li>Rebuilt company's website</li>
+                        <li>Back-end of the system for EEG markup (.edf .udf)</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Java Script</span>
+                        <span class="tag">Boost</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Nginx</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">GitlabCI</span>
+                    </div>
+            </li>
+        </ul>
+    </section>
 
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li class="item">
+                <div class="item-header">
+                    <h3 class="place">Moscow Institute of Physics and Technology</h3>
+                    <span class="years">August 2016 - July 2018</span>
+                </div>
+                <h4 class="position">Master of Science in Applied Mathematics and Physics, with honours</h4>
+                <ul class="projects">
+                    <li>Thesis: Coagulation of spherical macroparticles in dusty plasmas</li>
+                    <li>Specialization: Theoretical Physics and Applied Math</li>
+                    <li>Junior Researcher position at Joint Institute for High Temperatures, RAS</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Fortran</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Calculus</span>
+                    <span class="tag">Physics</span>
+                    <span class="tag">Computational mathematics</span>
+                </div>
+            </li>
 
-   <!-- на jQuery (необходим для Bootstrap - х JavaScript плагины) -->  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Включают все скомпилированные плагины (ниже), или включать отдельные файлы по мере необходимости -->  
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+            <li class="item">
+                <div class="item-header">
+                    <h3 class="place">Moscow Institute of Physics and Technology</h3>
+                    <span class="years">August 2016 - July 2018</span>
+                </div>
+                <h4 class="position">Bachelor of Science in Applied Mathematics and Physics</h4>
+                <ul class="projects">
+                    <li>Thesis: Interaction of two spherical macroparlicles in equilibrium plasmas</li>
+                    <li>Specialization: Theoretical Physics and Applied Math</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Fortran</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Calculus</span>
+                    <span class="tag">Physics</span>
+                    <span class="tag">Computational mathematics</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:andrei.a.pautov@gmail.com">andrei.a.pautov@gmail.com</a></p>
+        <p>
+            Telegram <a href="https://t.me/qooxdoo">@qooxdoo</a> (preferred communication method)
+        </p>
+        <p>
+            LinkedIn: <a href="https://www.linkedin.com/in/andrei-pautov/">page</a>
+        </p>
+        <p>
+            Phone: <a href="tel:+381629451645">SRB +381 62 9451645</a></h4>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Andrei Pautov, Novi Sad, Serbia</p>
+    </footer>
+</body>
 </html>
